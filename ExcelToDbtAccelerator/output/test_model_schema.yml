@@ -1,0 +1,50 @@
+version: 2
+models:
+- name: Users
+  columns:
+  - name: user_id
+    description: Unique identifier for the user
+    tests:
+    - unique
+    - not_null
+  - name: username
+    description: User's display name
+    tests: []
+  - name: email
+    description: User's email address
+    tests: []
+  - name: created_at
+    description: Timestamp of user creation
+    tests: []
+- name: Orders
+  columns:
+  - name: order_id
+    description: Unique identifier for the order
+    tests:
+    - unique
+    - not_null
+  - name: user_id
+    description: User who placed the order
+    tests: []
+  - name: total_amount
+    description: Total amount of the order
+    tests: []
+  - name: order_date
+    description: Date when the order was placed
+    tests: []
+- name: Products
+  columns:
+  - name: product_id
+    description: Unique identifier for the product
+    tests:
+    - unique
+    - not_null
+  - name: product_name
+    description: Name of the product
+    tests: []
+  - name: price
+    description: Price of the product
+    tests: []
+  - name: category
+    description: Category of the product
+    tests: []

@@ -1,0 +1,9 @@
+pandas>=1.0.0
+PyYAML>=5.1
+openpyxl>=3.0.0
+
+[dev]
+pytest
+flake8
+black
+mypy
